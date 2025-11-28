@@ -1,6 +1,3 @@
-console.log('🔧 环境变量检查:');
-console.log('REACT_APP_API_URL:', process.env.REACT_APP_API_URL);
-console.log('NODE_ENV:', process.env.NODE_ENV);
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
@@ -16,6 +13,10 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Admin from './pages/Admin';
 import './App.css';
+
+console.log('🔧 环境变量检查:');
+console.log('REACT_APP_API_URL:', process.env.REACT_APP_API_URL);
+console.log('NODE_ENV:', process.env.NODE_ENV);
 
 function App() {
   return (
